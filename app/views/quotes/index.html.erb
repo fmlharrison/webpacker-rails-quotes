@@ -1,0 +1,8 @@
+<h1>Who said that?!?</h1>
+
+<%= content_tag :div,
+  id: "quotes",
+  data: @quotes.to_json do %>
+<% end %>
+
+<%= javascript_pack_tag 'quotes/index' %>
